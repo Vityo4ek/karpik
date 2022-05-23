@@ -1,0 +1,252 @@
+body {
+  background: white;
+  width: 1512px;
+  height: 982px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 26px;
+  margin-left: 120px;
+  
+}
+
+/* Header */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    padding: 1px 0 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header__inner {
+  display: inline-block;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+/* Nav */
+
+.nav {
+  margin-left: 335px;
+}
+
+
+
+.nav__link {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  text-decoration: none;
+  margin-left: 76px;
+  color: #000;
+  vertical-align: top;
+  transition: color 0.2s linear;
+  position: relative;
+}
+
+.nav__link::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  opacity: 0;
+  background-color: wheat;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity 1s linear;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+}
+
+.nav__link:hover {
+  color: #8f8c80;
+}
+
+/* Button */
+
+#btn1 {
+  margin-left: 157px;
+  background: white;
+  box-sizing: border-box;
+  width: 105px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 17px;
+  border: 1px solid #b8b8b8;
+  border-radius: 12px;
+  transition: background 1s linear,
+  width 1s linear,
+  height 1s linear;
+}
+
+#btn1:hover {
+  background-color: black;
+  color: #fff;
+  border: 3px solid #285379;
+  width: 150px;
+  height: 35px;
+  
+}
+
+#btn2 {
+  box-sizing: border-box;
+  color: #fff;
+  margin-left: 46px;
+  width: 88px;
+  height: 40px;
+  background: #000000;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Telegraf";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 17px;
+  transition: background 1s linear,
+  width 1s linear,
+  height 1s linear;
+}
+
+#btn2:hover {
+  height: 33px;  
+  width: 97px;
+  color: black;
+  background: white;
+}
+
+#btn3 {
+  width: 255px;
+  height: 74px;
+  background: linear-gradient(
+    90deg,
+    #fdd3d5 0%,
+    #f0c3fe 46.27%,
+    #dbeeff 96.47%
+  );
+  border: 5px solid #ffffff;
+  box-shadow: 0px 20px 25px rgba(207, 167, 247, 0.3);
+  border-radius: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 25px;
+  margin: 54px 0 0 0;
+  color: #000000;
+  cursor: pointer;
+  transition: background 2s linear, color 1s linear;
+}
+
+#btn3:hover {
+  color: #fdd3d5;
+  background: linear-gradient(
+    90deg,
+    #453536 0%,
+    #6d407a 46.27%,
+    #285379 96.47%
+  );
+}
+
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+/* Left-side */
+.left__side {
+  width: 50%;
+  margin-left: 120px;
+}
+
+.left__h1 {
+  width: 514px;
+  height: 216px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 114px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 68px;
+  line-height: 72px;
+}
+
+.p1 {
+  width: 589px;
+  height: 150px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 41px;
+  color: #707070;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.right__side {
+    width: 50%;
+}
+
+.logo__main {
+    position: relative;
+    width: 100%;
+    height: 628px;
+    background: linear-gradient(#e66465, #9198e5);
+    margin-top: 74px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.saly {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.saly img {
+    margin-left: -100px;
+}
+
+#other1 {
+    position: absolute;
+    top: 350px;
+    left: 370px;
+}
+
+#other2 {
+    position: absolute;
+    top: 130px;
+    left: 490px;
+}
+
+#other3 {
+    position: absolute;
+    top: 143px;
+    left: 528px;
+}
